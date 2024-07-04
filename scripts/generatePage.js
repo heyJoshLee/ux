@@ -41,32 +41,33 @@ $heroSection.appendChild($heroContent);
 $main.appendChild($heroSection);
 const $blurb = el('div');
 $blurb.classList.add('main-blurb');
+$blurb.classList.add('center');
 $blurb.innerHTML = info.mainBlurb;
 $main.append($blurb);
 
 
 // Setup Suggestions section
-const $suggestions = el('div');
-$suggestions.classList.add('suggestions');
-$main.appendChild($suggestions);
-const count = 10;
-for (let i = 0; i <= count; i++) {
-  const newSuggestion = el('div');
-  newSuggestion.classList.add('suggestion-item');
-  newSuggestion.classList.add('shadow'); 
-  newSuggestion.innerHTML = `
-    <div>
-      <img src="https://placehold.jp/150x150.png" alt="placeholder" />
-    </div>
-    <div class='suggestion-item-info'>
-      <h3>Placeholder title</h3>
-      <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
-    </div>
-  `
-  $suggestions.appendChild(newSuggestion);
-}
+// const $suggestions = el('div');
+// $suggestions.classList.add('suggestions');
+// $main.appendChild($suggestions);
+// const count = 10;
+// for (let i = 0; i <= count; i++) {
+//   const newSuggestion = el('div');
+//   newSuggestion.classList.add('suggestion-item');
+//   newSuggestion.classList.add('shadow'); 
+//   newSuggestion.innerHTML = `
+//     <div>
+//       <img src="https://placehold.jp/150x150.png" alt="placeholder" />
+//     </div>
+//     <div class='suggestion-item-info'>
+//       <h3>Placeholder title</h3>
+//       <p>
+//       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+//       </p>
+//     </div>
+//   `
+//   $suggestions.appendChild(newSuggestion);
+// }
 
 
 // Setup Footer
@@ -87,7 +88,7 @@ const pageInfo = {
   gettingHere: {
     title: "Getting Here",
     heroImage: 'plane.jpg',
-    mainBlurb: 'The most common way to get here is to take plane. Boats are also an option',
+    mainBlurb: "Here's how to get to Taniti.",
     skipSuggestion: true,
   },
   lodging: {
@@ -103,7 +104,7 @@ const pageInfo = {
   transportation: {
     title: "Transportation",
     heroImage: 'car.jpg',
-    mainBlurb: 'Rent a car, get a taxi, or take public transportation while here.',
+    mainBlurb: 'Make sure you know how to get around while here.',
   },
   activities: {
     title: "Activities",
